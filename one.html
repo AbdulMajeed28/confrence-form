@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conference Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Conference Registration Form</h2>
+        <form>
+            <div class="form-field">
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input" type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label class="form-label" for="email">Email address:</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label class="form-label" for="phone">Phone number:</label>
+                <input class="form-input" type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-field">
+                <label class="form-label" for="affiliation">Affiliation:</label>
+                <input class="form-input" type="text" id="affiliation" name="affiliation" required>
+            </div>
+            <div class="form-field">
+                <label class="form-label">Dietary Preferences:</label>
+                <label class="form-checkbox-label" for="vegetarian">
+                    <input class="form-checkbox" type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+                    Vegetarian
+                </label>
+                <label class="form-checkbox-label" for="vegan">
+                    <input class="form-checkbox" type="checkbox" id="vegan" name="diet" value="vegan">
+                    Vegan
+                </label>
+                <label class="form-checkbox-label" for="gluten-free">
+                    <input class="form-checkbox" type="checkbox" id="gluten-free" name="diet" value="gluten-free">
+                    Gluten-free
+                </label>
+            </div>
+            <div class="form-field">
+                <label class="form-label" for="workshop">Preferred Workshop:</label>
+                <select class="form-dropdown" id="workshop" name="workshop">
+                    <option value="workshop1">Workshop 1</option>
+                    <option value="workshop2">Workshop 2</option>
+                    <option value="workshop3">Workshop 3</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label class="form-label">Registration Type:</label>
+                <label class="form-radio-label" for="general">
+                    <input class="form-radio" type="radio" id="general" name="registration" value="general">
+                    General Attendee
+                </label>
+                <label class="form-radio-label" for="student">
+                    <input class="form-radio" type="radio" id="student" name="registration" value="student">
+                    Student
+                </label>
+                <label class="form-radio-label" for="vip">
+                    <input class="form-radio" type="radio" id="vip" name="registration" value="vip">
+                    VIP
+                </label>
+            </div>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
